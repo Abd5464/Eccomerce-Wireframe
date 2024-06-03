@@ -1,0 +1,312 @@
+*{
+    margin: 0px;
+padding: 0px;
+/* border: none; */
+border: 0;
+box-sizing: border-box;
+}
+
+.flex{
+    align-items: center;
+    justify-content: space-between;
+        display: flex;
+    }
+
+.banner{
+    background-color: rgb(120, 129, 198);
+}
+.hamburger{
+    display: none;
+}
+.wrapper{
+    padding: 2% 4%;
+    min-height: 100vh;
+}
+
+ ul li{
+    display: inline;
+    font-family: 'Franklin Gothic Medium';
+    /* wanner add that filter feature */
+}
+ ul li a{
+    text-decoration: none;
+    padding: 1rem;
+   color: white;
+}
+ ul li a:hover{
+    color: black;
+}
+    
+.write-up{
+    padding-top:14%;   
+}
+.write-up p{
+    max-width: 260px;
+font-size: 1rem;
+
+line-height: 2rem;
+}
+.write-up h1{
+    text-transform: uppercase;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-size: 2rem;
+    font-weight: 800px;
+    /* width: 100%; */
+    /* this is default */
+    color: antiquewhite;
+    max-width: 413px;
+    margin: 0;
+    padding: 0;
+
+}
+.write-up h4{
+    max-width:260px;
+    padding:1rem 0;
+    /* width: 260px; */
+}
+button{
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    padding: 1rem;
+    margin: 0px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s;
+   background-color: black;
+   color: white;
+   /* border: none;  */
+   /*  */
+}
+
+button.od:hover{
+    background: radial-gradient(rgb(10, 19, 20), transparent);  
+color: black;
+}
+
+button.bn:hover{
+    border-radius: 8px;
+color: #000;
+background:linear-gradient(rgb(20, 9, 64), transparent);
+
+}
+
+button.tb:hover{
+    background:linear-gradient(rgb(196, 97, 21), transparent);
+    color: black;
+}
+
+.product{
+    background-color: rgb(197, 118, 15);
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+ grid-gap: 1.5rem;
+
+    justify-content: center;
+}
+
+
+.items{
+    padding: 20px;
+}
+
+.pricing button:hover{
+    color: black;
+    background-color:  rgb(197, 118, 15);
+}
+
+.item{
+    background: wheat;
+    height: 250px;
+    width: 250px;
+    padding: 15px;
+    justify-content: center;
+}
+
+.item .pricing
+{
+    margin-top:23px;
+  text-align: center;
+}
+    
+
+
+.testimonial h2{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 23px;
+}
+.testimonial article{
+   
+    width: 200px;
+    background-color: indianred;
+    height: 400px;
+    
+}
+.testimonial img{
+    width: 50px;
+    border-radius:23px;
+}
+footer{
+    background-color: wheat;
+  padding: 0px 40px 0px 40px ;
+    
+}
+.ads{
+    background-color: maroon;
+}
+.ads h1{
+    padding: 50px 5px;
+}
+.ads h2{
+    text-transform:uppercase;
+    line-height: 33px;
+}
+
+.ads p{
+   max-width:600px;
+   line-height: 24px;
+}
+.ads h3{
+    padding:  12px 0 ;
+}
+.wrapper{
+    padding-top: 0px;
+}
+
+.footer h1{
+text-transform:uppercase;
+width: 100%;
+font-size: 18px;
+background-color: rgb(202, 184, 149);
+padding: 10px;
+}
+.container{
+    border: 2px solid rgb(202, 184, 149);
+    padding: 50px;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.box1,.box2{
+display: flex;
+flex-direction: column;
+}
+.box1 li a,.box2 li a{
+    display: inline-block;
+    padding: 8px;
+}
+
+
+.sub h1{
+    padding: 10px;
+    font-family: 'Gill Sans';
+}
+
+input{
+height: 40px;
+    width: 230px;
+}
+.sub-btn{
+    color:wheat;
+ padding: 10px;
+    text-align: center;
+    
+}
+.sub-btn:hover{
+    color: #000;
+    background-color: rgb(202, 184, 149) ;
+}
+.me{
+    background-color:rgb(202, 184, 149);
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+}
+@media screen and (max-width: 1024px) {
+.items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+
+}
+/* this for pad */
+@media screen and (max-width: 768px) {
+
+    .banner{
+        background-color: brown ;
+    }
+    .nav{
+        display: none;
+    }
+    .grid , .container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 1.5rem;
+    }
+      @media screen and (max-width:540px) {
+        .items{
+            display: flex;
+            flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+    }
+
+    }
+    /* this is for phone */
+    @media screen and (max-width: 480px){
+    
+        .banner{
+            background-color: forestgreen ;
+        }
+            
+    .nav{
+        display: none;
+    }
+    .hamburger{
+        display: inline;
+        width: 20px;
+    }
+    .write-up  {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+    
+    .write-up h1{
+        text-align: center;
+        min-width: 294px;
+    }
+    .write-up button{
+        width: 100%;
+        margin: 4px;
+    }
+    .items,.container{
+        display: flex;
+        flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .me{
+        font-size: 16px;
+    }
+    .sub-btn{
+        padding: 12px;
+    }
+    .input{
+        width: 30px;
+    }
+    .sub>h1{
+    
+        align-self: center;
+        text-align: center;
+        width: 100% ;
+    }
+    .form{
+        display: flex;
+        flex-direction:column;  
+    }
+}
